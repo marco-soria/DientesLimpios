@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\DientesLimpios.Aplicacion\DientesLimpios.Aplicacion.csproj" />
+    <ProjectReference Include="..\DientesLimpios.Identidad\DientesLimpios.Identidad.csproj" />
     <ProjectReference Include="..\DientesLimpios.Infraestructura\DientesLimpios.Infraestructura.csproj" />
     <ProjectReference Include="..\DientesLimpios.Persistencia\DientesLimpios.Persistencia.csproj" />
   </ItemGroup>

@@ -5,6 +5,7 @@ using DientesLimpios.Persistencia;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -12,9 +13,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace DientesLimpios.Persistencia.Migrations
 {
     [DbContext(typeof(DientesLimpiosDbContext))]
-    partial class DientesLimpiosDbContextModelSnapshot : ModelSnapshot
+    [Migration("20251001215044_ColumnasAuditoria")]
+    partial class ColumnasAuditoria
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder

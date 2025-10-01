@@ -23,6 +23,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DientesLimpios.API", "Dient
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DientesLimpios.Infraestructura", "DientesLimpios.Infraestructura\DientesLimpios.Infraestructura.csproj", "{15C32B70-0FD4-4CD4-BD50-5677D5010419}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DientesLimpios.Identidad", "DientesLimpios.Identidad\DientesLimpios.Identidad.csproj", "{3495E1C9-5E24-4B64-BE23-D960BD711853}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -53,6 +55,10 @@ Global
 		{15C32B70-0FD4-4CD4-BD50-5677D5010419}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{15C32B70-0FD4-4CD4-BD50-5677D5010419}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{15C32B70-0FD4-4CD4-BD50-5677D5010419}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3495E1C9-5E24-4B64-BE23-D960BD711853}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3495E1C9-5E24-4B64-BE23-D960BD711853}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3495E1C9-5E24-4B64-BE23-D960BD711853}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3495E1C9-5E24-4B64-BE23-D960BD711853}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -64,6 +70,7 @@ Global
 		{62D1289D-74CE-48FB-9595-E91B6E85F54D} = {AEB2DAC8-4561-44FE-998E-675415DE5A0A}
 		{63339477-4A3A-4361-8EC1-3976CEC12AAB} = {02EA681E-C7D8-13C7-8484-4AC65E1B71E8}
 		{15C32B70-0FD4-4CD4-BD50-5677D5010419} = {AEB2DAC8-4561-44FE-998E-675415DE5A0A}
+		{3495E1C9-5E24-4B64-BE23-D960BD711853} = {AEB2DAC8-4561-44FE-998E-675415DE5A0A}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {AE2AE31D-AB9D-4DF7-942F-C7F5ED586454}
