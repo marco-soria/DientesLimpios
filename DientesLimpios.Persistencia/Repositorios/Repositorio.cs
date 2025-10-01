@@ -1,4 +1,5 @@
 ﻿using DientesLimpios.Aplicacion.Contratos.Repositorios;
+using Microsoft.EntityFrameworkCore;
 
 namespace DientesLimpios.Persistencia.Repositorios;
 
