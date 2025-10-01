@@ -28,11 +28,10 @@ public class CitaTests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ExcepcionDeReglaDeNegocio))]
     public void Constructor_FechaInicioEnElPasado_LanzaExcepcion()
     {
         var intervalo = new IntervaloDeTiempo(DateTime.UtcNow.AddDays(-1), DateTime.UtcNow);
-        var cita = new Cita(_pacienteId, _dentistaId, _consultorioId, intervalo);
+        Assert.ThrowsExactly<ExcepcionDeReglaDeNegocio>(() => new Cita(_pacienteId, _dentistaId, _consultorioId, intervalo));
     }
 
     [TestMethod]
@@ -44,12 +43,11 @@ public class CitaTests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ExcepcionDeReglaDeNegocio))]
     public void Cancelar_CitaNoProgramada_LanzaExcepcion()
     {
         var cita = new Cita(_pacienteId, _dentistaId, _consultorioId, _intervalo);
         cita.Cancelar();
-        cita.Cancelar();
+        Assert.ThrowsExactly<ExcepcionDeReglaDeNegocio>(() => cita.Cancelar());
     }
 
     [TestMethod]
@@ -61,11 +59,10 @@ public class CitaTests
     }
 
     [TestMethod]
-    [ExpectedException(typeof(ExcepcionDeReglaDeNegocio))]
     public void Completar_CitaCancelada_LanzaExcepcion()
     {
         var cita = new Cita(_pacienteId, _dentistaId, _consultorioId, _intervalo);
         cita.Cancelar();
-        cita.Completar();
+        Assert.ThrowsExactly<ExcepcionDeReglaDeNegocio>(() => cita.Completar());
     }
 }

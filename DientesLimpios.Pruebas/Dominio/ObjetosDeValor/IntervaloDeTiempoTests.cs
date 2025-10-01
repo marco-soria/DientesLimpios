@@ -7,10 +7,9 @@ namespace DientesLimpios.Pruebas.Dominio.ObjetosDeValor;
 public class IntervaloDeTiempoTests
 {
     [TestMethod]
-    [ExpectedException(typeof(ExcepcionDeReglaDeNegocio))]
     public void Constructor_FechaInicioPosteriorAFechaFin_LanzaExcepcion()
     {
-        new IntervaloDeTiempo(DateTime.UtcNow, DateTime.UtcNow.AddDays(-1));
+        Assert.ThrowsExactly<ExcepcionDeReglaDeNegocio>(() => new IntervaloDeTiempo(DateTime.UtcNow, DateTime.UtcNow.AddDays(-1)));
     }
 
     [TestMethod]
